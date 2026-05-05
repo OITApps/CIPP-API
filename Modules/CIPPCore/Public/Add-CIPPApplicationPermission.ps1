@@ -10,7 +10,6 @@ function Add-CIPPApplicationPermission {
         $RequiredResourceAccess = 'CIPPDefaults'
     }
     if ($RequiredResourceAccess -eq 'CIPPDefaults') {
-
         $Permissions = Get-CippSamPermissions -NoDiff
         $RequiredResourceAccess = [System.Collections.Generic.List[object]]::new()
 
